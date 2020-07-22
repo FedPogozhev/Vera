@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Vera</string>
+    <string name="products">Товары</string>
+    <string name="service">Услуги</string>
+    <string name="basket">Корзина</string>
+    <string name="profile">Профиль</string>
+    <string name="hello">Hello</string>
+    <string name="general">Общее</string>
+    <string name="change_city">Изменить город</string>
+    <string name="search_in_city">Поиск в городе</string>
+    <string name="section_goods">Раздел товаров:</string>
+    <string name="section_service">Раздел услуг:</string>
+    <string name="section_basket">Ваша корзина:</string>
+    <string name="fasteners">Крепежи</string>
+    <string name="paints">Лакокрасочная продукция</string>
+    <string name="sanitary">Сантехника</string>
+    <string name="tools">Инструменты</string>
+    <string name="food_from_dining_room">Еда из столовой</string>
+    <string name="japanese_food">Японская кухня</string>
+    <string name="fast_food">Быстрое питание</string>
+    <string name="mixes">Сухие смеси</string>
+    <string name="foam">Пены, герметики, клей</string>
+    <string name="gloves">Перчатки и средства защиты</string>
+    <string name="tableware">Посуда</string>
+    <string name="filter">Фильтр</string>
+    <string name="search">поиск...</string>
+</resources>

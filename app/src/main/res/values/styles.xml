@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+    
+    <style name="TitleText">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:shadowColor">#333333</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/roboto_thin</item>
+    </style>
+
+    <style name="NameGoodsText">
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/roboto_thin</item>
+    </style>
+</resources>

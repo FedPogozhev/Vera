@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_general">
+
+    <fragment
+        android:id="@+id/navigation_general"
+        android:name="com.fedx.vera.ui.general.GeneralFragment"
+        android:label="@string/general"
+        tools:layout="@layout/general_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_products"
+        android:name="com.fedx.vera.ui.products.ProductsFragment"
+        android:label="@string/products"
+        tools:layout="@layout/products_fragment" >
+        <action
+            android:id="@+id/action_navigation_products_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+        <action
+            android:id="@+id/action_navigation_products_to_groupFoodFragment"
+            app:destination="@id/groupFoodFragment" />
+        <action
+            android:id="@+id/action_navigation_products_to_tableWareFragment"
+            app:destination="@id/tableWareFragment" />
+        <action
+            android:id="@+id/action_navigation_products_to_bulkMaterialFragment"
+            app:destination="@id/bulkMaterialFragment" />
+        <action
+            android:id="@+id/action_navigation_products_to_autoProductsFragment"
+            app:destination="@id/autoProductsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_service"
+        android:name="com.fedx.vera.ui.service.ServiceFragment"
+        android:label="@string/service"
+        tools:layout="@layout/service_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_basket"
+        android:name="com.fedx.vera.ui.basket.BasketFragment"
+        android:label="@string/basket"
+        tools:layout="@layout/basket_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.fedx.vera.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/profile_fragment" />
+
+    <fragment
+        android:id="@+id/constructionMaterialFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.ConstructionMaterialFragment"
+        tools:layout="@layout/construction_material_fragment"
+        android:label="ConstructionMaterialFragment" >
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_fastenersFragment"
+            app:destination="@id/fastenersFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_navigation_products"
+            app:destination="@id/navigation_products" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_paintsFragment"
+            app:destination="@id/paintsFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_sanitaryFragment"
+            app:destination="@id/sanitaryFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_toolsFragment"
+            app:destination="@id/toolsFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_plasticFragment"
+            app:destination="@id/plasticFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_glovesFragment"
+            app:destination="@id/glovesFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_mixesFragment"
+            app:destination="@id/mixesFragment" />
+        <action
+            android:id="@+id/action_constructionMaterialFragment_to_foamFragment"
+            app:destination="@id/foamFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupFoodFragment"
+        android:name="com.fedx.vera.ui.products.group_food.GroupFoodFragment"
+        android:label="group_food_fragment"
+        tools:layout="@layout/group_food_fragment" >
+        <action
+            android:id="@+id/action_groupFoodFragment_to_navigation_products"
+            app:destination="@id/navigation_products" />
+    </fragment>
+    <fragment
+        android:id="@+id/tableWareFragment"
+        tools:layout="@layout/table_ware_fragment"
+        android:name="com.fedx.vera.ui.products.tableware.TableWareFragment"
+        android:label="TableWareFragment" >
+        <action
+            android:id="@+id/action_tableWareFragment_to_navigation_products"
+            app:destination="@id/navigation_products" />
+    </fragment>
+    <fragment
+        android:id="@+id/fastenersFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.fasteners.FastenersFragment"
+        android:label="FastenersFragment"
+        tools:layout="@layout/fasteners_fragment">
+        <action
+            android:id="@+id/action_fastenersFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paintsFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.paints.PaintsFragment"
+        android:label="PaintsFragment"
+        tools:layout="@layout/paints_fragment">
+        <action
+            android:id="@+id/action_paintsFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/sanitary_fragment"
+        android:id="@+id/sanitaryFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.sanitary_engineering.SanitaryFragment"
+        android:label="SanitaryFragment" >
+        <action
+            android:id="@+id/action_sanitaryFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.tools.ToolsFragment"
+        android:label="ToolsFragment"
+        tools:layout="@layout/tools_fragment">
+        <action
+            android:id="@+id/action_toolsFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plasticFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.plastic.PlasticFragment"
+        android:label="PlasticFragment"
+        tools:layout="@layout/plastic_fragment">
+        <action
+            android:id="@+id/action_plasticFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/glovesFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.gloves.GlovesFragment"
+        android:label="GlovesFragment"
+        tools:layout="@layout/gloves_fragment">
+        <action
+            android:id="@+id/action_glovesFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mixesFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.mixes.MixesFragment"
+        android:label="mixes_fragment"
+        tools:layout="@layout/mixes_fragment">
+        <action
+            android:id="@+id/action_mixesFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foamFragment"
+        android:name="com.fedx.vera.ui.products.group_construction_material.foam.FoamFragment"
+        android:label="FoamFragment"
+        tools:layout="@layout/foam_fragment">
+        <action
+            android:id="@+id/action_foamFragment_to_constructionMaterialFragment"
+            app:destination="@id/constructionMaterialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bulkMaterialFragment"
+        android:name="com.fedx.vera.ui.products.bulk_material.BulkMaterialFragment"
+        android:label="BulkMaterialFragment"
+        tools:layout="@layout/bulk_material_fragment">
+        <action
+            android:id="@+id/action_bulkMaterialFragment_to_navigation_products"
+            app:destination="@id/navigation_products" />
+    </fragment>
+    <fragment
+        android:id="@+id/autoProductsFragment"
+        android:name="com.fedx.vera.ui.products.auto_products.AutoProductsFragment"
+        android:label="AutoProductsFragment"
+        tools:layout="@layout/auto_products_fragment">
+        <action
+            android:id="@+id/action_autoProductsFragment_to_navigation_products"
+            app:destination="@id/navigation_products" />
+    </fragment>
+
+</navigation>
